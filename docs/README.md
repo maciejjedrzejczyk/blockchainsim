@@ -18,12 +18,14 @@ This directory contains comprehensive documentation for the Advanced Blockchain 
 - **[TEST_DOCUMENTATION.md](TEST_DOCUMENTATION.md)** - Testing strategy and implementation
 - **[TEST_SUMMARY.md](TEST_SUMMARY.md)** - Summary of test results and coverage
 - **[TESTING_GUIDE.md](TESTING_GUIDE.md)** - Guide for running and understanding tests
+- **[DOCKER_DEPLOYMENT.md](DOCKER_DEPLOYMENT.md)** - Comprehensive Docker deployment guide
 
 ## 🎯 Quick Navigation
 
 ### For Developers
 - Start with [API_EXAMPLES.md](API_EXAMPLES.md) for complete API reference
 - Check [TRANSFER_FIX_SUMMARY.md](TRANSFER_FIX_SUMMARY.md) for technical implementation details
+- Use [DOCKER_DEPLOYMENT.md](DOCKER_DEPLOYMENT.md) for containerized deployment
 
 ### For Educators  
 - Review [ROLE_INTERFACES.md](ROLE_INTERFACES.md) for interface explanations
@@ -32,5 +34,9 @@ This directory contains comprehensive documentation for the Advanced Blockchain 
 ### For Testers
 - See [TEST_DOCUMENTATION.md](TEST_DOCUMENTATION.md) for testing approach
 - Follow [TESTING_GUIDE.md](TESTING_GUIDE.md) for running tests
+
+### For DevOps/Deployment
+- Follow [DOCKER_DEPLOYMENT.md](DOCKER_DEPLOYMENT.md) for containerized deployment
+- Use for educational institutions, cloud deployment, and production setups
 
 All documentation is kept up-to-date with the latest features and implementations.

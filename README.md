@@ -50,11 +50,14 @@ This blockchain demonstration tool provides a **complete, realistic blockchain i
 ## 🚀 Quick Start
 
 ### Prerequisites
-- **Node.js 14+**
+- **Node.js 14+** (for local development)
 - **npm** (comes with Node.js)
 - **Modern web browser**
+- **Docker** (optional, for containerized deployment)
 
-### Installation
+### Installation Options
+
+#### **Option 1: Local Installation**
 
 ```bash
 # Clone the repository
@@ -67,6 +70,27 @@ npm install
 # Start the server
 npm start
 ```
+
+#### **Option 2: Docker Deployment (Recommended)**
+
+```bash
+# Clone the repository
+git clone https://github.com/maciejjedrzejczyk/blockchainsim.git
+cd blockchainsim
+
+# Start with Docker Compose
+docker-compose up -d
+
+# Access the application
+open http://localhost:3000
+```
+
+**If you encounter Docker build issues**, run the fix script:
+```bash
+./docker-fix.sh
+```
+
+For detailed Docker deployment instructions, see [Docker Deployment Guide](docs/DOCKER_DEPLOYMENT.md).
 
 ### Access the Application
 
@@ -142,6 +166,7 @@ npm start
 - **[Interface Summary](docs/INTERFACE_SUMMARY.md)** - Complete interface overview
 - **[Transfer Fix Summary](docs/TRANSFER_FIX_SUMMARY.md)** - Technical implementation details
 - **[Test Documentation](docs/TEST_DOCUMENTATION.md)** - Testing strategy and results
+- **[Docker Deployment Guide](docs/DOCKER_DEPLOYMENT.md)** - Containerized deployment instructions
 
 ## 🧪 Testing
 

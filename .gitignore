@@ -60,6 +60,10 @@ jspm_packages/
 .env
 .env.test
 .env.production
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # parcel-bundler cache
 .cache
@@ -124,8 +128,19 @@ build/Release
 ehthumbs.db
 Thumbs.db
 
-# Local development
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Docker
+.docker/
+docker-compose.override.yml
+docker-compose.*.yml
+!docker-compose.yml
+!docker-compose.dev.yml
+
+# SSL certificates (for production)
+ssl/
+*.pem
+*.crt
+*.key
+
+# Container volumes
+volumes/
+data/
