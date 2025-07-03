@@ -58,7 +58,7 @@ This blockchain demonstration tool provides a **complete, realistic blockchain i
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/blockchainsim.git
+git clone https://github.com/maciejjedrzejczyk/blockchainsim.git
 cd blockchainsim
 
 # Install dependencies
@@ -264,7 +264,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 ### **Development Setup**
 ```bash
 # Clone and install
-git clone https://github.com/yourusername/blockchainsim.git
+git clone https://github.com/maciejjedrzejczyk/blockchainsim.git
 cd blockchainsim
 npm install
 
@@ -288,8 +288,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/blockchainsim/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/blockchainsim/discussions)
+- **Issues**: [GitHub Issues](https://github.com/maciejjedrzejczyk/blockchainsim/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/maciejjedrzejczyk/blockchainsim/discussions)
 - **Documentation**: [docs/](docs/) directory
 
 ## 🔄 Version History

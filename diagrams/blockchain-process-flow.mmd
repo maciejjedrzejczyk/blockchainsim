@@ -1,0 +1,24 @@
+flowchart LR
+    A[Token Issuer<br/>Creates 1000 tokens<br/>for Participant A] --> B[Issuance Transaction<br/>enters Pending Pool]
+    B --> C[Payment Provider<br/>validates and mines<br/>Block 1]
+    C --> D[Tokens Distributed<br/>A has 1000 tokens]
+    
+    D --> E[Participant A<br/>transfers 250 tokens<br/>to Participant B]
+    E --> F[Transfer Transaction<br/>enters Pending Pool]
+    F --> G[Payment Provider<br/>validates and mines<br/>Block 2]
+    G --> H[Transfer Complete<br/>A has 750, B has 250]
+    
+    H --> I[Participant B<br/>transfers 100 tokens<br/>to Participant C]
+    I --> J[Transfer Transaction<br/>enters Pending Pool]
+    J --> K[Payment Provider<br/>validates and mines<br/>Block 3]
+    K --> L[Final State<br/>A has 750, B has 150, C has 100]
+
+    classDef issuer fill:#e1f5fe
+    classDef participant fill:#e8f5e8
+    classDef miner fill:#f3e5f5
+    classDef process fill:#fff3e0
+    
+    class A issuer
+    class E,I participant
+    class C,G,K miner
+    class B,D,F,H,J,L process
