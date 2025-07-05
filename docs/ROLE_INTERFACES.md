@@ -1,23 +1,90 @@
-# 🎭 Role-Specific Interfaces Documentation
+# 🎭 User Interface Documentation
 
 ## 🎯 Overview
 
-The Advanced Blockchain Demo now includes **dedicated interfaces** for each user role, providing a focused and streamlined experience tailored to specific user responsibilities.
+The Advanced Blockchain Demo provides **two main interfaces** designed for different use cases and user needs.
 
 ## 🔗 Interface Access
 
-### **Main Interface** (Complete)
+### **Complete Interface** 📋
 - **URL**: `http://localhost:3000/index.html`
-- **Purpose**: Full-featured interface with all functionality
-- **Users**: Administrators, educators, comprehensive demonstrations
+- **Purpose**: Full-featured interface with all blockchain functionality
+- **Features**: 
+  - User registration for all roles (Issuers, Participants, Payment Providers)
+  - Token issuance operations
+  - Token transfer functionality
+  - Block mining capabilities
+  - Comprehensive blockchain exploration
+  - Search functionality (hash search, wallet history)
+  - Demo data generation
+  - Basic mode toggle for simplified operations
+- **Users**: Administrators, educators, comprehensive demonstrations, all user roles
 
-### **Token Issuer Interface** 🏦
-- **URL**: `http://localhost:3000/issuer.html`
-- **Purpose**: Focused on token issuance operations
-- **Users**: Banks, central authorities, token creators
+### **Proof-of-Existence Interface** 🔐
+- **URL**: `http://localhost:3000/proof-of-existence.html`
+- **Purpose**: Specialized interface for file timestamping and verification
+- **Features**:
+  - File upload and hash generation
+  - Cryptographic proof creation
+  - File verification by hash or upload
+  - Automatic blockchain timestamping
+  - Basic mode toggle support
+- **Users**: Anyone needing document verification, legal timestamping, integrity proofs
 
-### **Participant Interface** 👤
-- **URL**: `http://localhost:3000/participant.html`
+## 🎨 Interface Design Philosophy
+
+### **Complete Interface**
+The complete interface serves as the primary hub for all blockchain operations. It provides:
+
+- **Role-based functionality**: All user roles can perform their respective operations
+- **Educational value**: Perfect for learning and demonstrating blockchain concepts
+- **Administrative control**: Full access to all system features
+- **Flexibility**: Switch between secure mode (with private keys) and basic mode (simplified)
+
+### **Proof-of-Existence Interface**
+The proof-of-existence interface focuses on a specific use case:
+
+- **Simplicity**: Clean, focused interface for file verification
+- **Accessibility**: No blockchain knowledge required
+- **Practical utility**: Real-world application for document timestamping
+- **Integration**: Seamlessly works with the main blockchain system
+
+## 🔄 Mode Support
+
+Both interfaces support **Basic Mode** and **Secure Mode**:
+
+### **Secure Mode** (Default)
+- Full cryptographic validation
+- Private key requirements
+- Manual mining process
+- Complete security features
+
+### **Basic Mode**
+- Simplified operations without private keys
+- Automatic transaction processing
+- Immediate blockchain updates
+- Educational and demonstration friendly
+
+## 🚀 Getting Started
+
+### **For Blockchain Learning**
+1. Start with the **Complete Interface**
+2. Register users with different roles
+3. Try token issuance, transfers, and mining
+4. Explore the blockchain and search features
+5. Toggle Basic Mode for simplified operations
+
+### **For File Verification**
+1. Use the **Proof-of-Existence Interface**
+2. Upload files to create cryptographic proofs
+3. Verify file integrity using hashes
+4. Leverage blockchain timestamping for legal purposes
+
+## 📚 Additional Resources
+
+- **API Documentation**: See `API_EXAMPLES.md` for complete API reference
+- **Testing Guide**: See `TEST_DOCUMENTATION.md` for testing procedures
+- **Docker Deployment**: See `DOCKER_DEPLOYMENT.md` for containerized setup
 - **Purpose**: Focused on token transfer operations
 - **Users**: Regular users, businesses, consumers
 

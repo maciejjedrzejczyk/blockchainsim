@@ -12,7 +12,7 @@ This blockchain demonstration tool provides a **complete, realistic blockchain i
 - **Role-based access control** (Issuers, Participants, Payment Providers)
 - **Cryptographic security** (RSA key pairs, digital signatures)
 - **Real mining simulation** with proof-of-work
-- **Multiple user interfaces** tailored for different roles
+- **Comprehensive user interface** for all blockchain operations
 - **Comprehensive search capabilities** including wallet history
 - **Educational focus** perfect for demonstrations and learning
 
@@ -29,11 +29,9 @@ This blockchain demonstration tool provides a **complete, realistic blockchain i
 - **👤 Participants**: Transfer tokens between accounts
 - **⚡ Payment Providers**: Mine blocks and validate transactions
 
-### 🎨 **Multiple Interfaces**
-- **📋 Complete Interface**: Full-featured administrative interface
-- **🏦 Issuer Interface**: Focused on token creation operations
-- **👤 Participant Interface**: Streamlined for token transfers
-- **⚡ Payment Provider Interface**: Mining and validation tools
+### 🎨 **User Interface**
+- **📋 Complete Interface**: Full-featured administrative interface with all blockchain operations
+- **🔐 Proof-of-Existence Interface**: File timestamping and verification system
 
 ### 🔍 **Advanced Search & Exploration**
 - **Hash Search**: Find blocks and transactions by hash
@@ -95,9 +93,7 @@ For detailed Docker deployment instructions, see [Docker Deployment Guide](docs/
 ### Access the Application
 
 - **Complete Interface**: http://localhost:3000/
-- **Token Issuer Interface**: http://localhost:3000/issuer.html
-- **Participant Interface**: http://localhost:3000/participant.html
-- **Payment Provider Interface**: http://localhost:3000/miner.html
+- **Proof-of-Existence Interface**: http://localhost:3000/proof-of-existence.html
 
 ## 📖 How to Use
 
@@ -124,7 +120,14 @@ For detailed Docker deployment instructions, see [Docker Deployment Guide](docs/
 - Process all pending transactions into new block
 - Updates all balances
 
-### 5. **Explore Blockchain**
+### 5. **Create Proof-of-Existence** (No Authentication Required)
+- Upload any file to create cryptographic proof of existence
+- System calculates SHA-256 hash and stores it on blockchain
+- Automatic block creation and mining
+- Verify files later by uploading or entering hash
+- Perfect for document timestamping and integrity verification
+
+### 6. **Explore Blockchain**
 - Search by block hash or transaction hash
 - View wallet transaction history
 - Copy hashes for external use
@@ -137,9 +140,7 @@ For detailed Docker deployment instructions, see [Docker Deployment Guide](docs/
 ├── server.js             # Express API server
 ├── public/               # Frontend interfaces
 │   ├── index.html        # Complete interface
-│   ├── issuer.html       # Token issuer interface
-│   ├── participant.html  # Participant interface
-│   ├── miner.html        # Payment provider interface
+│   ├── proof-of-existence.html # Proof-of-existence interface
 │   ├── script.js         # Frontend JavaScript
 │   └── styles.css        # Styling and themes
 ├── __tests__/            # Jest test suites
@@ -153,8 +154,9 @@ For detailed Docker deployment instructions, see [Docker Deployment Guide](docs/
 ### **Core Documentation**
 - **[API Examples](docs/API_EXAMPLES.md)** - Complete API reference with curl examples
 - **[API Quick Reference](docs/API_QUICK_REFERENCE.md)** - Essential API calls
-- **[Role Interfaces](docs/ROLE_INTERFACES.md)** - Role-specific interface documentation
+- **[User Interface Guide](docs/ROLE_INTERFACES.md)** - Complete interface documentation
 - **[Exploration Features](docs/EXPLORATION_FEATURES.md)** - Search and exploration capabilities
+- **[Proof-of-Existence](docs/PROOF_OF_EXISTENCE.md)** - File timestamping and verification guide
 
 ### **Process Flow Diagrams**
 - **[Process Flow Diagrams](diagrams/PROCESS_FLOW_DIAGRAM.md)** - Detailed Mermaid and Graphviz diagrams
